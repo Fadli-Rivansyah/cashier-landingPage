@@ -22,6 +22,7 @@
 
 body{
     font-family: 'Poppins',sans-serif;
+    background-color: var(--body);
 }
 
 .big-header {
@@ -50,3 +51,62 @@ body{
     margin: 0;
     color: var(--navy);
 }
+
+.btn-primary {
+    background-color: var(--blue);
+    font-weight:  var(--fwsemibold);
+    color: var(--white);
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 50px;
+    border: 0;
+}
+
+.btn-secondary{
+    background-color: var(--gray1);
+    color: var(--navy);
+    padding: 12px 20px;
+    border-radius: 50px;
+    border: 0;
+    font-size: 16px;
+    font-weight:  var(--fwmedium);
+}
+
+.btn-secondary:hover{
+    background-color: var(--navy);
+    color: var(--white) !important;
+}
+
+
+.navbar-nav  .nav-item a:hover{
+    font-weight: var(--fwsemibold);
+    transition: all 0.1s ease-in;
+    color: var(--blue);
+}
+
+.navbar-nav .nav-item a{
+    color: var(--navy);
+    transition: all 0.1s ease-in;
+}
+.navbar-nav .nav-item {
+    padding-left: 25px;
+    padding-right: 25px;
+    font-weight: var(--fwregular);
+    transition: all 0.1s ease-in;
+}
+.navbar-brand{
+    font-weight: var(--fwbold);
+    font-size: 28px;
+    color: var(--navy);
+}
+.navbar{
+    --bs-navbar-padding-y:0rem;
+}
+
+.cashier-navbar{
+    padding: 20px;
+    background: var(--white);
+    border-bottom-left-radius: 26px;
+    border-bottom-right-radius: 26px;
+}
+

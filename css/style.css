@@ -15,8 +15,8 @@
     --fwregular:400;
     --fwmedium:500;
     --fwsemibold:600;
-    --fwsbold:700;
-    --fwsextrabold:800;
+    --fwbold:700;
+    --fwextrabold:800;
     --fwblack:900;
 }
 
@@ -26,7 +26,27 @@ body{
 
 .big-header {
     font-size: 48px;
-    font-weight: var(--fwsextrabold);
+    font-weight: var(--fwextrabold);
     color: var(--navy);
     margin: 0;
+}
+
+.medium-header{
+    font-size: 28px;
+    font-weight: var(--fwbold);
+    color: var(--navy);
+    margin: 0;
+}
+.small-header {
+    font-size: 22px;
+    font-weight: var(--fwbold);
+    color: var(--navy);
+    margin: 0;
+}
+
+.primary-copy{
+    font-size: 16px;
+    font-weight: var(--fwregular);
+    margin: 0;
+    color: var(--navy);
 }

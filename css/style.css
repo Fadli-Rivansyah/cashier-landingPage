@@ -11,6 +11,7 @@
     --gray2: #E7EBED;
     --body: #F9FBFC;
     --white: #ffffff;
+    --gray3: #8C9295;
     --fwlight:300;
     --fwregular:400;
     --fwmedium:500;
@@ -35,6 +36,23 @@ body{
 .medium-header{
     font-size: 28px;
     font-weight: var(--fwbold);
+    color: var(--navy);
+    margin: 0;
+}
+
+.badge{
+    width: max-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+    background-color: var(--softPurple);
+    border-radius: 50px;
+}
+.text-badge{
+    padding-left: 10px;
+    font-size: 14px;
+    font-weight: var(--fwsemibold);
     color: var(--navy);
     margin: 0;
 }
@@ -110,3 +128,157 @@ body{
     border-bottom-right-radius: 26px;
 }
 
+.mt-70{
+    margin-top: 70px;
+}
+.mb-30{
+    margin-bottom: 30px;
+}
+.mb-10{
+    margin-bottom: 10px;
+}
+.mr-30{
+    margin-right: 30px;
+}
+.mb-27{
+    margin-bottom: 27px;
+}
+.mb-26{
+    margin-bottom: 26px;
+}
+.mb-20{
+    margin-bottom: 20px;
+}
+.mb-15{
+    margin-bottom: 15px;
+}
+.mb-10{
+    margin-bottom: 10px;
+}
+
+.text-center{
+    text-align: center;
+}
+.text-end {
+    text-align: end;
+}
+
+.card-brand{
+    background-color: var(--gray2);
+    border-radius: 16px;
+    height: 110px;
+    width: 227px;
+    text-align: center;
+}
+ .card-brand  .logo{
+    height: 50px;
+    margin-top: 30px;
+    /* margin-top: 30px; */
+}
+
+.carousel-wrapper-left {
+    display: flex;
+    height: 110px;
+    animation: movetoleft 25s linear infinite;
+}
+
+.carousel-left {
+    display: flex;
+    justify-content: flex-end;
+    height: 110px;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+@keyframes movetoleft {
+    0%{
+        transform:translateX(100%);
+    } to {
+        transform: translateX(0%);
+    }
+}
+
+.carousel-wrapper-right {
+    display: flex;
+    height: 110px;
+    animation: movetoright 25s linear infinite;
+}
+
+.carousel-right {
+    display: flex;
+    justify-content: flex-start;
+    height: 110px;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+@keyframes movetoright {
+    0%{
+        transform:translateX(0%);
+    } to {
+        transform: translateX(100%);
+    }
+}
+.big-features-card{
+    display: flex;
+    gap: 1em;
+    padding: 30px;
+    background-color: white;
+    border-radius: 16px;
+    padding-bottom: 50px;
+    cursor: pointer;
+}
+
+.features-wrapper:hover .big-features-card:not(:hover){
+    filter: blur(4px);
+    translate: all 0.3s;
+}
+
+.icon > img {
+    width: 56px;
+    height: 60px;
+}
+.btn-card{
+    color: var(--blue);
+    text-decoration: none;
+}
+
+.small-features-card{
+    display: flex;
+    gap: 1em;
+    padding: 30px;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 16px;
+}
+
+.features-wrapper:hover .small-features-card:not(:hover){
+    filter: blur(4px);
+    translate: all 0.3s;
+}
+
+.form-control{
+    border-radius: 50px;
+    background-color: white;
+    color: var(--gray3);
+    margin-bottom: 16px;
+    padding:12px 20px;
+    border:0;
+}
+.form-select{
+    padding: 12px 20px;
+    border-radius: 50px;
+    background-color: white;
+    color: var(--gray3);
+    border: 0;
+    background-image: url("../images/ic_ad.svg");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    background-size: 24px;
+    margin-bottom: 16px;
+}
+
+textarea.form-control {
+    border-radius: 16px;
+    margin-bottom: 16px;
+}
